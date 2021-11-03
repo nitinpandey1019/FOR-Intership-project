@@ -1,0 +1,12 @@
+{% extends 'user/base.html' %}
+{% block title %}User{% endblock title %}
+{% block content %}
+<hr style="height:4px;border-width:0;color:gray;background-color:red">
+<hr style="height:4px;border-width:0;color:gray;background-color:silver">
+<hr style="height:4px;border-width:0;color:gray;background-color:green">
+
+<div class="border text-center my-5 p-5">
+    <a href="{% url 'signup' %}" class="btn btn-primary">SignUp</a>
+    <a href="{% url 'login' %}" class="btn btn-success">LogIn</a>
+</div>
+{% endblock %}

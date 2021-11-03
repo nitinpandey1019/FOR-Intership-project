@@ -1,0 +1,23 @@
+{% include 'user/navbar.html' %}
+<div class="container">
+<table class="table table-striped table-hover table-bordered">
+    <tr>
+        <th>SrNo</th>
+        <th>Name</th>
+        <th>Weight</th>
+        <th>Price</th>
+        <th>Created_at</th>
+        <th>Updated_at</th>
+    </tr>
+    {% for dt in data %}
+    <tr>
+        <td>{{dt.id}}</td>
+        <td>{{dt.name}}</td>
+        <td>{{dt.weight}} &nbsp Kg</td>
+        <td>{{dt.price}}</td>
+        <td>{{dt.created_at}}</td>
+        <td>{{dt.updated_at}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</div>
